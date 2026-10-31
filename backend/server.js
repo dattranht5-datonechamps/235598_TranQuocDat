@@ -10,15 +10,8 @@ require('dotenv').config();
 
 const app = express();
 
-// Cấu hình CORS chi tiết để xử lý triệt để lỗi Preflight trên Render
-const corsOptions = {
-  origin: '*', // Cho phép mọi nguồn (Frontend) gửi yêu cầu
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-};
-
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions)); // Cho phép tất cả request kiểm tra Preflight OPTIONS
+// Cho phép tất cả các tên miền (Frontend) truy cập API và tự động xử lý Preflight OPTIONS
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
