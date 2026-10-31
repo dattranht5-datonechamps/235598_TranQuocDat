@@ -36,3 +36,11 @@ docker pull dattranht5/backend-235598:latest
 - **URL Frontend (React):** https://two35598-tranquocdat.onrender.com
 - **URL Backend (Node.js / Express API):** https://backend-235598.onrender.com
 - **Trạng thái:** Đã triển khai thành công 2 dịch vụ riêng biệt trên Render Web Service và kết nối với MongoDB Atlas.
+
+## CÂU 8: TRIỂN KHAI BACKEND API TRÊN RENDER
+
+- **Sinh viên thực hiện:** Trần Quốc Đạt - MSSV: 235598
+- **URL Backend API:** https://backend-235598.onrender.com
+- **URL Frontend Web:** https://two35598-tranquocdat.onrender.com
+- **Health Endpoint:** https://backend-235598.onrender.com/health
+- **Devices Endpoint:** https://backend-235598.onrender.com/api/devices
