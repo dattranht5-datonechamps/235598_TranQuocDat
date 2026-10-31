@@ -2,7 +2,7 @@
 // CÂU 3: XÂY DỰNG BACKEND API (EXPRESS & MONGOOSE)
 // Sinh viên: Trần Quốc Đạt - MSSV: 235598
 // ============================================================
-
+global.crypto = require('crypto');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
