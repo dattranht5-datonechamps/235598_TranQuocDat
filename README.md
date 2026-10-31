@@ -22,3 +22,9 @@
 ## Hướng dẫn cài đặt và chạy cục bộ
 1. Backend: `cd backend && npm install && npm run dev` (tạo file `.env` từ `.env.example`)
 2. Frontend: `cd frontend && npm install && npm run dev`
+
+## Hướng dẫn chạy Backend bằng Docker (Câu 5)
+
+### 1. Kéo image từ Docker Hub
+```bash
+docker pull dattranht5/backend-235598:latest
