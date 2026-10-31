@@ -7,12 +7,12 @@ RUN npm install --no-audit --no-fund
 
 COPY . .
 
-# Nhận biến môi trường REACT_APP_API_URL từ Render
 ARG REACT_APP_API_URL
 ENV REACT_APP_API_URL=$REACT_APP_API_URL
 
-# Build giao diện và cài đặt serve để chạy web tĩnh
-RUN npm run build
+# Build trực tiếp bằng react-scripts
+RUN npx react-scripts build
+
 RUN npm install -g serve
 
 EXPOSE 3000
