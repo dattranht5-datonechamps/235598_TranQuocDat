@@ -4,12 +4,21 @@
 - **MSSV:** 235598
 - **Môn học:** Điện toán đám mây - TIN06
 
+## Mô tả đề tài
+Ứng dụng web quản lý thiết bị phòng học: xem danh sách, xem chi tiết, tìm kiếm, thêm, cập nhật, xóa thiết bị và theo dõi tình trạng sử dụng (Đang sử dụng, Hư hỏng, Đang sửa chữa, Ngừng sử dụng).
+
 ## Công nghệ sử dụng
-- Frontend: React, Axios, CSS3
+- Frontend: React (Vite)
 - Backend: Node.js, Express.js
 - Database: MongoDB Atlas
-- Container & Cloud Deployment: Docker, Docker Hub, Render
+- Container & Cloud: Docker, Docker Hub, Render
+- Quản lý mã nguồn: Git, GitHub
+
+## Cấu trúc dự án
+- `backend/`  : API Node.js + Express
+- `frontend/` : giao diện React
+- `README.md` : tài liệu dự án
 
 ## Hướng dẫn cài đặt và chạy cục bộ
-1. Backend: `cd backend && npm install && npm start`
-2. Frontend: `cd frontend && npm install && npm start`
+1. Backend: `cd backend && npm install && npm run dev` (tạo file `.env` từ `.env.example`)
+2. Frontend: `cd frontend && npm install && npm run dev`
