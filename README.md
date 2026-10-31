@@ -44,3 +44,18 @@ docker pull dattranht5/backend-235598:latest
 - **URL Frontend Web:** https://two35598-tranquocdat.onrender.com
 - **Health Endpoint:** https://backend-235598.onrender.com/health
 - **Devices Endpoint:** https://backend-235598.onrender.com/api/devices
+
+## BẢNG THÔNG TIN NỘP BÀI TỔNG THỂ
+
+| Hạng mục thông tin | Chi tiết thông tin nộp bài |
+| :--- | :--- |
+| **Họ và tên Sinh viên** | Trần Quốc Đạt |
+| **Mã số Sinh viên (MSSV)** | 235598 |
+| **Mã học phần / Tên bài tập** | TIN06 - Hệ Thống Quản Lý Thiết Bị Phòng Học |
+| **GitHub Repository** | https://github.com/dattranht5-datonechamps/235598_TranQuocDat |
+| **URL Frontend (Render)** | https://two35598-tranquocdat.onrender.com |
+| **URL Backend API (Render)** | https://backend-235598.onrender.com |
+| **Endpoint Health Check** | https://backend-235598.onrender.com/health |
+| **Docker Hub Frontend** | https://hub.docker.com/r/dattranht5/frontend-device-management |
+| **Docker Hub Backend** | https://hub.docker.com/r/dattranht5/backend-device-management |
+| **Trạng thái hệ thống** | Hoàn thành 100% các yêu cầu CRUD, Docker, MongoDB Atlas và Render Deployment. |
