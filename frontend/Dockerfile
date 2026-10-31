@@ -3,13 +3,18 @@ FROM node:18-alpine
 WORKDIR /app
 
 COPY package*.json ./
-
-RUN npm install
+RUN npm install --no-audit --no-fund
 
 COPY . .
 
-ENV PORT=3000
+# Nhận biến môi trường REACT_APP_API_URL từ Render
+ARG REACT_APP_API_URL
+ENV REACT_APP_API_URL=$REACT_APP_API_URL
+
+# Build giao diện và cài đặt serve để chạy web tĩnh
+RUN npm run build
+RUN npm install -g serve
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["serve", "-s", "build", "-l", "3000"]
